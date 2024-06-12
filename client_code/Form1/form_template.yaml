@@ -26,9 +26,8 @@ components:
     properties: {role: outlined}
     type: TextBox
   - name: image_1
-    properties: {}
+    properties: {visible: true, source: _/theme/164948.jpg}
     type: Image
-    layout_properties: {width: 363.4716796875}
 custom_component: true
 properties:
 - {name: prop, type: string, default_value: '', important: true, default_binding_prop: true}
