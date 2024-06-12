@@ -3,23 +3,23 @@ container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html'}
 components:
-- type: ColumnPanel
-  properties: {col_widths: '{}'}
-  name: content_panel
-  layout_properties: {slot: default}
-  components:
-  - name: button_1
-    properties: {text: button_1}
-    type: Button
-    layout_properties: {grid_position: 'IJRIRL,TAYVKB'}
-  - name: label_1
-    properties: {text: Rassel webpage, bold: true, font_size: 50}
-    type: Label
-    layout_properties: {grid_position: 'XPAVWK,WOCSXJ'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
   layout_properties: {slot: nav-right}
+  components:
+  - type: ColumnPanel
+    properties: {col_widths: '{}'}
+    name: content_panel
+    components:
+    - name: button_1
+      properties: {text: button_1, bold: false, underline: false, italic: true}
+      type: Button
+      layout_properties: {grid_position: 'TOYKSX,DZTOAS'}
+- name: outlined_1
+  properties: {role: outlined}
+  type: TextBox
+  layout_properties: {slot: default}
 custom_component: true
 properties:
 - {name: prop, type: string, default_value: '', important: true, default_binding_prop: true}
